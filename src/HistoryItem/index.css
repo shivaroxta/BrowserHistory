@@ -1,0 +1,17 @@
+.history-items {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.history {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.delete {
+  height: 30px;
+}
+.delete-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
