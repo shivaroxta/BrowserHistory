@@ -10,15 +10,12 @@ const HistoryList = props => {
   const onChangeValue = event => {
     setMessage(event.target.value)
   }
-  const SearchItems = () => {
+  const SearchItems = () =>
     initialHistoryList.filter(eachItem =>
       eachItem.title.toLowerCase().includes(message.toLowerCase()),
     )
-  }
 
-  const deleteValue = id => {
-    setList(list.filter(eachItem => eachItem.id !== id))
-  }
+  const deleteValue = id => setList(list.filter(eachItem => eachItem.id !== id))
 
   return (
     <div className="container">
