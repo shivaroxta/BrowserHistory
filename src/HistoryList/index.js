@@ -4,7 +4,7 @@ import HistoryItem from '../HistoryItem'
 
 const HistoryList = props => {
   const {initialHistoryList} = props
-  const [message, setMessage] = useState([''])
+  const [message, setMessage] = useState('')
   const [list, setList] = useState(initialHistoryList)
 
   const onChangeValue = event => {
@@ -45,7 +45,7 @@ const HistoryList = props => {
       </div>
       <div className="bg-container">
         <ul className="historyItems">
-          {SearchItems.map(eachItem => (
+          {SearchItems().map(eachItem => (
             <HistoryItem
               id={eachItem.id}
               timeAccessed={eachItem.timeAccessed}
