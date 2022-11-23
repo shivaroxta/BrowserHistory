@@ -47,7 +47,7 @@ const HistoryList = props => {
         <ul className="historyItems">
           {SearchItems().map(eachItem => (
             <HistoryItem
-              id={eachItem.id}
+              key={eachItem.id}
               timeAccessed={eachItem.timeAccessed}
               logoUrl={eachItem.logoUrl}
               title={eachItem.title}
